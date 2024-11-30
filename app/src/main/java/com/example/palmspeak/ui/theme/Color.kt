@@ -15,4 +15,6 @@ object CardColor {
     val introductionCard = Color(0xFFe9c46a)
     val aboutCard = Color(0xFFf4a261)
     val exerciseCard = Color(0xFFe76f51)
+    val quizCard = Color(0xFFA3C3D9)
+
 }

@@ -1,6 +1,5 @@
 package com.example.palmspeak.ui.screen.homescreen
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -20,13 +19,12 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.example.palmspeak.R
 import com.example.palmspeak.ui.components.Card
-import com.example.palmspeak.ui.navigation.Screen
 import com.example.palmspeak.util.cardColors
 import com.example.palmspeak.util.cardImage
 import com.example.palmspeak.util.cardTexts
 
 @Composable
-fun Home(
+fun HomeScreen(
     navHostController: NavHostController,
     navigate: (String) -> Unit,
     modifier: Modifier = Modifier
@@ -52,7 +50,7 @@ fun Home(
         LazyVerticalGrid(
             columns = GridCells.Fixed(2),
             modifier = modifier
-                .fillMaxWidth()
+                .fillMaxSize()
                 .padding(8.dp)
         ) {
             itemsIndexed(cardTexts) { index, text ->

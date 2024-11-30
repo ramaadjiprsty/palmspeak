@@ -20,7 +20,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -46,8 +48,13 @@ fun Card(
             .padding(4.dp)
             .fillMaxWidth()
             .size(160.dp)
+            .graphicsLayer {
+                shadowElevation = 8.dp.toPx() // Set elevation here
+                shape = RoundedCornerShape(32.dp) // Set shape here
+                clip = true // Enable clipping
+            }
             .clickable { navigate(cardText) },
-        shape = RoundedCornerShape(32.dp)
+
     ) {
         Column(
             modifier = Modifier
@@ -60,7 +67,7 @@ fun Card(
                 modifier = Modifier
                     .fillMaxWidth()
                     .size(100.dp)
-                    .padding(8.dp)
+                    .padding(12.dp)
             )
             Text(
                 text = cardText,
@@ -71,11 +78,5 @@ fun Card(
                 color = Color.Black
             )
         }
-//        Box(
-//            modifier = Modifier.fillMaxSize(),
-//            contentAlignment = Alignment.Center
-//        ) {
-//
-//        }
     }
 }
