@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Palm Speak</string>
+    <string name="lets_learn">Let\'s Learn</string>
+    <string name="idn_sign_language">Indonesia Sign Language</string>
+    <string name="introduction">Introduction</string>
+    <string name="learning">Learning</string>
+    <string name="exercise">Exercise</string>
+    <string name="about">About</string>
+</resources>
