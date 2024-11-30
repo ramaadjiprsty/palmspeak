@@ -12,7 +12,7 @@ val cardTexts = listOf(
 )
 
 val cardImage = listOf(
-    R.drawable.man,
+    R.drawable.presentation,
     R.drawable.sign_language,
     R.drawable.choose,
     R.drawable.quiz,

@@ -1,5 +1,6 @@
 package com.example.palmspeak.ui.screen.homescreen
 
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -34,12 +35,12 @@ fun HomeScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .statusBarsPadding()
-            .padding(top = 24.dp)
+            .offset(y = 8.dp)
     ) {
         Box(
             modifier = Modifier
-                .padding(8.dp)
+                .padding(16.dp)
+                .offset(y = 8.dp)
         ) {
             Column {
                 Text(
@@ -58,7 +59,6 @@ fun HomeScreen(
             contentPadding = PaddingValues(12.dp),
             modifier = modifier
                 .fillMaxSize()
-                .offset(y = 24.dp)
         ) {
             itemsIndexed(cardTexts) { index, text ->
                 Card(

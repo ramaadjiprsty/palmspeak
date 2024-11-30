@@ -54,7 +54,6 @@ fun Card(
                 clip = true // Enable clipping
             }
             .clickable { navigate(cardText) },
-
     ) {
         Column(
             modifier = Modifier

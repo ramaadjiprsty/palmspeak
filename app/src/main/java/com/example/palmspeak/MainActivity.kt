@@ -14,7 +14,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             PalmSpeakTheme {
-                PalmSpeakApp(modifier = Modifier.statusBarsPadding())
+                PalmSpeakApp()
             }
         }
     }
